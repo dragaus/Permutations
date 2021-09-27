@@ -444,6 +444,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315548694}
   m_CullTransparentMesh: 1
+--- !u!114 &371118348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
+  m_PrefabInstance: {fileID: 8855292918819021816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5455c72b5b7753c40ac7ae8a96808cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &390201225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,11 +1307,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipCodeText: {fileID: 2077247044}
-  shearchCodeField: {fileID: 1559035820}
-  shearchCodeButton: {fileID: 35502194}
+  searchCodeField: {fileID: 1559035820}
+  searchCodeButton: {fileID: 35502194}
   nextButton: {fileID: 2032460181}
   previousButton: {fileID: 1790553612}
   showCodesButton: {fileID: 989287852}
+  capsuleColors:
+  - {fileID: 2100000, guid: ff8ff506c4060c341a93e4fde7b78f1c, type: 2}
+  - {fileID: 2100000, guid: f5eaced3bcc6bb44897b59bf6d74103f, type: 2}
+  - {fileID: 2100000, guid: 672f7b36cb4db6a4a99b82c7c5d476ed, type: 2}
+  - {fileID: 2100000, guid: dc78fef3360c34849b74a26ec8a4d52a, type: 2}
+  - {fileID: 2100000, guid: a8dcd980f14864d4383f765f944c52c2, type: 2}
+  - {fileID: 2100000, guid: b25ab00cb16f0de44ba61fe7ee8ff3af, type: 2}
+  - {fileID: 2100000, guid: bcac01382b0924546af37b33a767b310, type: 2}
+  - {fileID: 2100000, guid: 8b48c8a473e100241860058de039578d, type: 2}
+  metalColors:
+  - {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
+  - {fileID: 2100000, guid: cb5140b33e6d6d14980ba1de2a625961, type: 2}
+  - {fileID: 2100000, guid: b24a9ce61082e6145b922546f5c38ec6, type: 2}
+  - {fileID: 2100000, guid: c112404db3b66db468ae1d6fd953a180, type: 2}
+  - {fileID: 2100000, guid: dffae908ab3d9d8498a27ff0d6d8c9ac, type: 2}
+  - {fileID: 2100000, guid: 777908bdb9f5daf458cea9aa76adc7bb, type: 2}
+  - {fileID: 2100000, guid: 170415dee20ef5c44b9d51edc42e7eb0, type: 2}
+  - {fileID: 2100000, guid: 62a53cd7add09c94eb0c497aefcf3e2d, type: 2}
+  - {fileID: 2100000, guid: 22e90c85f3791f648bed966b6a277715, type: 2}
+  - {fileID: 2100000, guid: e64681c892202964ab21757fa3243809, type: 2}
+  - {fileID: 2100000, guid: 7927e529fb396b641bd7e9ecfd1efd0e, type: 2}
+  - {fileID: 2100000, guid: 330b3b0d87cb267428539ab1b2c5d74a, type: 2}
+  neonColors:
+  - {fileID: 2100000, guid: c8dac109615613441af9c09544d6c8fc, type: 2}
+  - {fileID: 2100000, guid: 259c6e7451e05cf49a9dbea2729d44a1, type: 2}
+  - {fileID: 2100000, guid: 1b740f1f961d81b41b3f183e9bbfc744, type: 2}
+  - {fileID: 2100000, guid: 302dd9696492bb449b2fda9f027a5d32, type: 2}
+  - {fileID: 2100000, guid: 6c9baf262f08ad74488f1dd6b13d242b, type: 2}
+  - {fileID: 2100000, guid: d79e314764228c548b8d6df3f56624a7, type: 2}
+  - {fileID: 2100000, guid: fe3453f3fe9874544a08c5c6c0bef13e, type: 2}
+  - {fileID: 2100000, guid: 934c95f509dbbef45a16e3dfa4b3c663, type: 2}
+  ship: {fileID: 371118348}
 --- !u!4 &1532003275
 Transform:
   m_ObjectHideFlags: 0
@@ -2142,14 +2185,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
+    - target: {fileID: 3604928864173647914, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: c8dac109615613441af9c09544d6c8fc, type: 2}
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: shipMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: cb5140b33e6d6d14980ba1de2a625961, type: 2}
+      objectReference: {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: holderMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: cb5140b33e6d6d14980ba1de2a625961, type: 2}
+      objectReference: {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: lightsMaterial
       value: 
@@ -2157,6 +2204,6 @@ PrefabInstance:
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: capsuleMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: f5eaced3bcc6bb44897b59bf6d74103f, type: 2}
+      objectReference: {fileID: 2100000, guid: ff8ff506c4060c341a93e4fde7b78f1c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
