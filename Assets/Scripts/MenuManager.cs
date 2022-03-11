@@ -40,6 +40,17 @@ public class MenuManager : MonoBehaviour
     {
         int value = int.Parse(searchCodeField.text);
         Debug.Log(value);
+
+        int lucesIndex = value % neonColors.Count;
+        int soporteIndex = Mathf.FloorToInt(value / neonColors.Count) % metalColors.Count;
+        int naveIndex = Mathf.FloorToInt(value / (neonColors.Count * metalColors.Count)) % metalColors.Count;
+        int capsulaIndex = Mathf.FloorToInt(value / (neonColors.Count * metalColors.Count * metalColors.Count)) % capsuleColors.Count;
+
+        ship.capsuleMaterial = capsuleColors[capsulaIndex];
+        ship.shipMaterial = metalColors[naveIndex];
+        ship.holderMaterial = metalColors[soporteIndex];
+        ship.lightsMaterial = neonColors[lucesIndex];
+        ship.ColourShipNow();
     }
 
     void NextCombination()
@@ -54,28 +65,20 @@ public class MenuManager : MonoBehaviour
 
     void ShowCodes()
     {
+        ship.capsuleMaterial = capsuleColors[0];
+        ship.shipMaterial = metalColors[0];
+        ship.holderMaterial = metalColors[0];
+        ship.lightsMaterial = neonColors[1];
+        ship.ColourShipNow();
         StartCoroutine(NextColor());
     }
 
     IEnumerator NextColor()
     {
         yield return new WaitForSeconds(0.05f);
-
-        //Estoy encontrando el primer color de las luces
         int lightsIndex = permutationCode % neonColors.Count;
-        Debug.Log($"lightsIndex is {lightsIndex} in permutation code: {permutationCode}");
-        
-        //Revisar ciclos de neon
-        //De esos ciclos obtenbgo el index del holder
         int holderIndex = Mathf.FloorToInt(permutationCode / neonColors.Count) % metalColors.Count;
-        Debug.Log(permutationCode / neonColors.Count);
-
-        //Revisar las permutaciones que voy a tener entre neonColors y metalColors
-        //De estas permutaciones obtenbgo el index de la nave
         int shipIndex = Mathf.FloorToInt(permutationCode / (neonColors.Count * metalColors.Count)) % metalColors.Count;
-
-        //Revisar las permutaciones que voy a tener entre neonColors , metalColors y metalColors
-        //Des este ciclo obtengo el index de capsule
         int capsuleIndex = Mathf.FloorToInt(permutationCode / (neonColors.Count * metalColors.Count * metalColors.Count)) % capsuleColors.Count;
 
         ship.capsuleMaterial = capsuleColors[capsuleIndex];
@@ -83,9 +86,10 @@ public class MenuManager : MonoBehaviour
         ship.holderMaterial = metalColors[holderIndex];
         ship.lightsMaterial = neonColors[lightsIndex];
         ship.ColourShipNow();
+        permutationCode++ ;
         shipCodeText.text = permutationCode.ToString();
-        permutationCode++;
-
         StartCoroutine(NextColor());
     }
+
+    
 }

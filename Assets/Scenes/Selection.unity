@@ -444,17 +444,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315548694}
   m_CullTransparentMesh: 1
---- !u!114 &371118348 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
-  m_PrefabInstance: {fileID: 8855292918819021816}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5455c72b5b7753c40ac7ae8a96808cad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &390201225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1082,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &1039428869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
+  m_PrefabInstance: {fileID: 8855292918819021816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5455c72b5b7753c40ac7ae8a96808cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165160560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: d79e314764228c548b8d6df3f56624a7, type: 2}
   - {fileID: 2100000, guid: fe3453f3fe9874544a08c5c6c0bef13e, type: 2}
   - {fileID: 2100000, guid: 934c95f509dbbef45a16e3dfa4b3c663, type: 2}
-  ship: {fileID: 371118348}
+  ship: {fileID: 1039428869}
 --- !u!4 &1532003275
 Transform:
   m_ObjectHideFlags: 0
@@ -2022,7 +2022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 129.83545}
+  m_AnchoredPosition: {x: 0, y: 190}
   m_SizeDelta: {x: 200, y: 40.3291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2077247044
@@ -2185,10 +2185,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
-    - target: {fileID: 3604928864173647914, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
-      propertyPath: m_Materials.Array.data[3]
-      value: 
-      objectReference: {fileID: 2100000, guid: c8dac109615613441af9c09544d6c8fc, type: 2}
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: shipMaterial
       value: 
@@ -2200,7 +2196,7 @@ PrefabInstance:
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: lightsMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 259c6e7451e05cf49a9dbea2729d44a1, type: 2}
+      objectReference: {fileID: 2100000, guid: c8dac109615613441af9c09544d6c8fc, type: 2}
     - target: {fileID: 3610084652168796353, guid: 1ecff0ea72c74364fb383e8b022caea7, type: 3}
       propertyPath: capsuleMaterial
       value: 

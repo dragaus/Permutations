@@ -97,3 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5455c72b5b7753c40ac7ae8a96808cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capsuleMaterial: {fileID: 2100000, guid: ff8ff506c4060c341a93e4fde7b78f1c, type: 2}
+  shipMaterial: {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
+  holderMaterial: {fileID: 2100000, guid: 1266394491f00764d8531ada52e84e9f, type: 2}
+  lightsMaterial: {fileID: 2100000, guid: c8dac109615613441af9c09544d6c8fc, type: 2}
